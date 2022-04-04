@@ -1,0 +1,10 @@
+.header-cont {
+    @apply w-full h-20 justify-between bg-blue py-2 px-4;
+}
+.logo {
+    @apply text-4xl text-white;
+    font-family: 'poppins-bold';
+}
+.nav-links a {
+    @apply text-white text-base px-4;
+}
