@@ -8,7 +8,11 @@ module.exports = {
       blue: "rgba(0,130,146, 0.7)",
       white: "#fff"
     },
-    extend: {},
+    extend: {
+      screens: {
+        "mx-md": {'max': '767px'}
+      }
+    },
   },
   plugins: [],
 }
