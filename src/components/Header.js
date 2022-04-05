@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link} from "react-router-dom";
 
 function Header () {
     return (
@@ -9,9 +9,9 @@ function Header () {
             </div>
             <nav className="flex flex-grow justify-end mx-md:justify-around mx-md:mt-2">
                 <ul className="flex-cont nav-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Sign In</a></li>
+                    <li><Link to='/'>Home</Link></li>
+                    <li><Link to='/about'>About</Link></li>
+                    <li><Link to='/SignIn'>Sign In</Link></li>
                 </ul>
             </nav>
         </div>
