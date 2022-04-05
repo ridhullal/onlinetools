@@ -1,6 +1,10 @@
+.header-wrap {
+    @apply bg-blue px-4;
+}
 .header-cont {
-    @apply w-full h-20 justify-between bg-blue py-2 px-4 
+    @apply w-full h-20 justify-between py-2 mx-auto 
         mx-md:flex-wrap mx-md:justify-center mx-md:h-auto mx-md:py-3;
+        max-width: 1200px;   
 }
 .logo {
     @apply text-4xl text-white;

@@ -6,7 +6,9 @@ module.exports = {
     colors: {
       black: "#000",
       blue: "rgba(0,130,146, 0.7)",
-      white: "#fff"
+      white: "#fff",
+      grey: '#666e68',
+      darkGrey: '#555c57'
     },
     extend: {
       screens: {

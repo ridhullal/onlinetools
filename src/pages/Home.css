@@ -1,0 +1,8 @@
+.home-title {
+    font-family: 'poppins-bold';
+    @apply text-center text-3xl text-darkGrey capitalize; 
+}
+.home-subtitle {
+    max-width: 650px;
+    @apply text-center mx-auto text-grey;
+}

@@ -16,15 +16,30 @@
     font-family: 'poppins-bold';
     src: url('./assets/fonts/poppins/Poppins-Bold.ttf');
   } 
+  body {
+    font-family: 'poppins-regular';
+  }
+  #root {
+    @apply flex flex-col;
+    min-height: 100vh;
+  }
 }
 
 /* Custom layer styles */
 @layer utilities {
-  body {
-    font-family: 'poppins-regular'
-  }
   .flex-cont {
     @apply flex items-center;
+  }
+  .page-wrap {
+    @apply flex-cont flex-col w-full flex-grow mx-auto px-4 py-8;
+  }
+  .page-container {
+    max-width: 1200px;
+    @apply w-full mx-auto h-full flex-grow;
+  }
+  .card-cont {
+    max-width: 900px;
+    @apply grid w-full grid-cols-3 gap-4 mx-auto items-stretch mx-md:grid-cols-1;
   }
 }
 
