@@ -1,17 +1,19 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
 
 import './Card.css'
 
-const onCardClickHandler = (props) => {
-    props.history.push({
-        pathname: '/tool-detail'
-    });
-}
 
 const Card = (props) => {
+    let navigate = useNavigate();
+
+    const onCardClickHandler = (toolName) => {
+        navigate('/tool-detail',{state:{tool: toolName}});
+    }
+
     return (
-        <div className="card" onClick={()=> onCardClickHandler(props)}></div>    
+        <div className="card" onClick={()=> onCardClickHandler(props.toolName)}></div>    
     )
 }
 

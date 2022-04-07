@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "@material-tailwind/react/tailwind.css";
+
 /* Custom base Styles */
 @layer base {
   @font-face {

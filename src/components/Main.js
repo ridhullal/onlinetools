@@ -12,7 +12,7 @@ function Main() {
             <Route path='/' element={<Home/>}/>
             <Route path='/about' element={<About/>}/>
             <Route path='/SignIn' element={<SignIn/>}/>
-            <Route path="/item-1" element={<ToolDetail />}/>
+            <Route path="/tool-detail" element={<ToolDetail />}/>
         </Routes>
     )
 }
