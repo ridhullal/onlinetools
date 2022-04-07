@@ -3,11 +3,15 @@ import { Link } from "react-router-dom"
 
 import './Card.css'
 
+const onCardClickHandler = (props) => {
+    props.history.push({
+        pathname: '/tool-detail'
+    });
+}
+
 const Card = (props) => {
     return (
-        <Link to={props.cardLink}>
-            <div className="card"></div>    
-        </Link>
+        <div className="card" onClick={()=> onCardClickHandler(props)}></div>    
     )
 }
 
