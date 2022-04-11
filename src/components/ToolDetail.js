@@ -58,7 +58,7 @@ const ToolDetail = (props) => {
                             valueLabelDisplay="auto"
                         />
                     </div>
-                    <div className="flex flex-col md:items-end mx-md:order-3 tool-row-cont my-4">
+                    <div className="flex flex-col md:items-end mx-md:order-3 tool-row-cont my-4 mx-md:mt-0">
                         <button className="def-btn mb-2" onClick={() => convertTextHandler()}>Convert Text</button>
                         <button className="def-btn" onClick={() => copyClickHandler()}>Copy to Clipboard</button>
                     </div>
