@@ -43,6 +43,14 @@
     max-width: 900px;
     @apply grid w-full grid-cols-3 gap-4 mx-auto items-stretch mx-md:grid-cols-1;
   }
+  .def-btn {
+    font-family: 'poppins-bold';
+    outline: none !important;
+    @apply text-sm text-blue border rounded-md border-blue px-4 py-2 ;
+  }
+  .def-btn:hover {
+    @apply bg-blue text-white;
+  }
 }
 
 /* Custom components Styles */

@@ -1,12 +1,24 @@
 .tool-cont {
     box-shadow: 0px 2px 15px 0 rgb(0, 0, 0,0.5);
     width: 80%;
-    @apply bg-white mx-auto flex-wrap items-start;
+    @apply bg-white mx-auto flex-wrap items-stretch;
     min-height: 50vh;
 }
+.tool-row-cont {
+    @apply w-1/2 mx-md:w-full px-2;
+}
+.tool-row-cont button {
+    min-width: 180px;
+}
 .textarea-cont {
-    @apply w-1/2 mx-md:w-full h-full flex flex-col;
+    @apply  flex flex-col;
+}
+.textarea-cont > div {
+    @apply flex-grow;
 }
 .textarea-cont textarea {
-
+    @apply text-base text-darkGrey;
+}
+.textarea-cont span.text-green-500 {
+    display: none;
 }
