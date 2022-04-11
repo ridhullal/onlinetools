@@ -39,7 +39,7 @@ const ToolDetail = (props) => {
                             placeholder="Place the Text"
                         />
                     </div>
-                    <div className="textarea-cont tool-row-cont mx-md:order-3" id="renderedText">
+                    <div className="textarea-cont tool-row-cont mx-md:order-4" id="renderedText">
                         <Textarea 
                             size="regular"
                             outline={true}
@@ -58,7 +58,7 @@ const ToolDetail = (props) => {
                             valueLabelDisplay="auto"
                         />
                     </div>
-                    <div className="flex flex-col items-end mx-md:order-4 tool-row-cont my-4">
+                    <div className="flex flex-col md:items-end mx-md:order-3 tool-row-cont my-4">
                         <button className="def-btn mb-2" onClick={() => convertTextHandler()}>Convert Text</button>
                         <button className="def-btn" onClick={() => copyClickHandler()}>Copy to Clipboard</button>
                     </div>
