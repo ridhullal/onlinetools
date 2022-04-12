@@ -48,8 +48,14 @@
     outline: none !important;
     @apply text-sm text-blue border rounded-md border-blue px-4 py-2 ;
   }
+  .def-btn.dark-blue {
+    @apply text-darkBlue border-darkBlue;
+  }
   .def-btn:hover {
     @apply bg-blue text-white;
+  }
+  .def-btn.dark-blue:hover {
+    @apply bg-darkBlue;
   }
 }
 
