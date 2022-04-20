@@ -20,12 +20,11 @@ const ToolDetail = (props) => {
         console.log(renderedText);
     }
     
-    const convertTextHandler = () => {
+    const convertTextHandler = async() => {
         const text = document.querySelector('#enteredText textarea').value;
         const convertValue = document.querySelector('#rangeSelect input').value;
-        setParaText(text);
-        console.log(convertValue);
-        paraPhrase(text);
+        const outText = await paraPhrase(text, convertValue);
+        setParaText(outText);
     }
 
     const handleRadioChange = (event) => {
