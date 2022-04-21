@@ -72,6 +72,7 @@ const ToolDetail = (props) => {
                             outline={true}
                             placeholder="Place the Text"
                         />
+                        
                     </div>
                     <div className="tool-row-cont md:order-4 my-4" id="rangeSelect">
                         <label className="text-darkGrey">Select how much to be reduced:</label>
