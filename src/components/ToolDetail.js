@@ -4,6 +4,7 @@ import Textarea  from "@material-tailwind/react/Textarea";
 import { Slider } from "@mui/material";
 
 import './ToolDetail.css';
+import { paraPhrase } from "../actions/routeActions";
 
 
 const ToolDetail = (props) => {
@@ -19,11 +20,11 @@ const ToolDetail = (props) => {
         console.log(renderedText);
     }
     
-    const convertTextHandler = () => {
+    const convertTextHandler = async() => {
         const text = document.querySelector('#enteredText textarea').value;
         const convertValue = document.querySelector('#rangeSelect input').value;
-        setParaText(text);
-        console.log(convertValue);
+        const outText = await paraPhrase(text, convertValue);
+        setParaText(outText);
     }
 
     const handleRadioChange = (event) => {
@@ -85,7 +86,7 @@ const ToolDetail = (props) => {
                         />
                     </div>
                     <div className="flex flex-col md:items-start md:order-6 tool-row-cont my-2 mx-md:mb-4">
-                        <button className="def-btn dark-blue" onClick={() => convertTextHandler()}>Convert Text</button>
+                        <button className="def-btn dark-blue" onClick={() => convertTextHandler()}>Paraphrase</button>
                     </div>
                     <div className="textarea-cont tool-row-cont md:order-3" id="renderedText">
                         <Textarea 
