@@ -9,7 +9,8 @@ module.exports = {
       darkBlue: "#1976D2",
       white: "#fff",
       grey: '#666e68',
-      darkGrey: '#555c57'
+      darkGrey: '#555c57',
+      transparent:'transparent'
     },
     extend: {
       screens: {

@@ -16,6 +16,12 @@ function Home (props) {
                     <Card toolName={'tool-1'}/>
                     <Card toolName={'tool-2'}/>
                     <Card toolName={'tool-3'}/>
+                    <Card toolName={'tool-1'}/>
+                    <Card toolName={'tool-2'}/>
+                    <Card toolName={'tool-3'}/>
+                    <Card toolName={'tool-1'}/>
+                    <Card toolName={'tool-2'}/>
+                    <Card toolName={'tool-3'}/>
                 </div>
             </div>
         </div>
