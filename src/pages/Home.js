@@ -17,9 +17,6 @@ function Home (props) {
                     <Card toolName={'tool-2'}/>
                     <Card toolName={'tool-3'}/>
                 </div>
-                <buttun
-                    onClick={()=> props.history.push({pathname: "/item-1"})}
-                >click</buttun>
             </div>
         </div>
     )
