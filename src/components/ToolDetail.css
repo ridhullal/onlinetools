@@ -43,3 +43,19 @@
 .css-eg0mwd-MuiSlider-thumb {
     background-color: rgba(0,130,146, 1) !important;
 } */
+
+.description {
+    font-family: 'poppins-regular';
+    padding:2em;
+    margin:3em;
+}
+
+.description_heading{
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5em 0;
+}
+
+.description_list{
+    list-style: circle;
+}

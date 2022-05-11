@@ -13,7 +13,8 @@ const Card = (props) => {
     }
 
     return (
-        <div className="card" onClick={()=> onCardClickHandler(props.toolName)}></div>    
+        <div className="card" id={props.classname} onClick={()=> onCardClickHandler(props.toolName)}>
+        </div>    
     )
 }
 

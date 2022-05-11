@@ -7,3 +7,8 @@
 .card:hover {
     transform: scale(1.01);
 }
+#summarizer {
+    background-image: url(../assets/edit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}

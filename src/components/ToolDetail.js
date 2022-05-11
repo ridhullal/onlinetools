@@ -110,6 +110,24 @@ const ToolDetail = (props) => {
                         <button className="def-btn dark-blue" onClick={() => copyClickHandler()}>Copy to Clipboard</button>
                     </div>
                 </div>
+                <div className="description">
+                    <h2 className="description_heading">How to use text summerizer tool?</h2>
+                    <ul className="description_list">
+                        <li>Keep the radio button selected in "TEXT" option</li>
+                        <li>For text summarizer, copy and paste the text you need to summarize in the text box provided</li>
+                        <li>You can select the amount of summary required by using the slider</li>
+                        <li>Click on the "SUMMARIZE" button. You will get summary in the right in the other text box provided</li>
+                        <li>You can copy the summary into and use it where ever you needed.</li>
+                    </ul>
+                    <h2 className="description_heading">How to get summary of website?</h2>
+                    <ul className="description_list">
+                        <li>Keep the radio button selected in "URL" option</li>
+                        <li>Paste website URL in the provided text box</li>
+                        <li>You can select the amount of summary required by using the slider</li>
+                        <li>Click on the "SUMMARIZE" button. You will get summary in the right in the other text box provided</li>
+                        <li>You can copy the summary into and use it where ever you needed.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     )
