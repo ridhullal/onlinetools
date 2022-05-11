@@ -4,7 +4,7 @@ import Textarea  from "@material-tailwind/react/Textarea";
 import { Slider } from "@mui/material";
 
 import './ToolDetail.css';
-import { paraPhrase } from "../actions/routeActions";
+import { paraPhrase, paraUrl } from "../actions/routeActions";
 
 
 const ToolDetail = (props) => {
@@ -21,10 +21,18 @@ const ToolDetail = (props) => {
     }
     
     const convertTextHandler = async() => {
+        if (document.querySelector('input[name="tool-input-select"]:checked').value == 'text'){
         const text = document.querySelector('#enteredText textarea').value;
         const convertValue = document.querySelector('#rangeSelect input').value;
         const outText = await paraPhrase(text, convertValue);
         setParaText(outText);
+        }
+        else if (document.querySelector('input[name="tool-input-select"]:checked').value == 'url'){
+            const text = document.querySelector('#enteredText textarea').value;
+            const convertValue = document.querySelector('#rangeSelect input').value;
+            const outText = await paraUrl(text, convertValue);
+        setParaText(outText);
+        }
     }
 
     const handleRadioChange = (event) => {
@@ -43,11 +51,12 @@ const ToolDetail = (props) => {
                                 name="tool-input-select" 
                                 type="radio" 
                                 onChange={(e) => handleRadioChange(e)}
-                                value="url"
+                                value="text"
+                                checked
                             />
-                            <span>URL</span>                    
+                            <span>Text</span>                    
                         </label>
-                        <label className="radio-select flex-cont">
+                        {/* <label className="radio-select flex-cont">
                             <input 
                                 name="tool-input-select" 
                                 type="radio"
@@ -55,15 +64,15 @@ const ToolDetail = (props) => {
                                 value="page-link"
                             />
                             <span>Page Link</span>                    
-                        </label>
+                        </label> */}
                         <label className="radio-select flex-cont">
                             <input 
                                 name="tool-input-select" 
                                 type="radio"
                                 onChange={(e) => handleRadioChange(e)}
-                                value="text"
+                                value="url"
                             />
-                            <span>Text</span>                    
+                            <span>URL</span>                    
                         </label>
                     </div>
                     <div className="textarea-cont tool-row-cont md:order-2" id="enteredText">
@@ -86,7 +95,7 @@ const ToolDetail = (props) => {
                         />
                     </div>
                     <div className="flex flex-col md:items-start md:order-6 tool-row-cont my-2 mx-md:mb-4">
-                        <button className="def-btn dark-blue" onClick={() => convertTextHandler()}>Paraphrase</button>
+                        <button className="def-btn dark-blue" onClick={() => convertTextHandler()}>Summarize</button>
                     </div>
                     <div className="textarea-cont tool-row-cont md:order-3" id="renderedText">
                         <Textarea 

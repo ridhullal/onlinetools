@@ -12,7 +12,7 @@ function Header () {
                     <ul className="flex-cont nav-links">
                         <li><Link to='/'>Home</Link></li>
                         <li><Link to='/about'>About</Link></li>
-                        <li><Link to='/SignIn'>Sign In</Link></li>
+                        <li><Link to='/'>Contact US</Link></li>
                     </ul>
                 </nav>
             </div>
