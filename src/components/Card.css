@@ -1,4 +1,5 @@
 .card {
+    
     min-height: 300px;
     box-shadow: 0 3px 8px 0 rgba(0,0,0,0.7);
     @apply bg-grey cursor-pointer rounded-md;
@@ -9,6 +10,7 @@
 }
 #summarizer {
     background-image: url(../assets/edit.png);
+    
     background-repeat: no-repeat;
     background-position: center;
 }

@@ -14,14 +14,7 @@ function Home (props) {
                 </div>
                 <div className="card-cont mt-12 mx-md:mt-8">
                     <Card toolName={'Summarizer'} classname="summarizer"/>
-                    <Card toolName={'tool-2'}/>
-                    <Card toolName={'tool-3'}/>
-                    <Card toolName={'tool-1'}/>
-                    <Card toolName={'tool-2'}/>
-                    <Card toolName={'tool-3'}/>
-                    <Card toolName={'tool-1'}/>
-                    <Card toolName={'tool-2'}/>
-                    <Card toolName={'tool-3'}/>
+                   
                 </div>
             </div>
         </div>
